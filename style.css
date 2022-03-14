@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+    padding: 0 2%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+nav{
+    display: flex; /* pour alligner les div*/
+    flex-direction: row; /* La direction suit une ligne */
+    flex-wrap: wrap; /*pour mettre sur la même ligne ou non*/
+    justify-content: space-between; /* mettre de l'espace entre les div*/
+    align-items: center; /* mettre les 2 divs au meme niveau */
+    position: sticky; /*pour que ca reste toujours en haut de la page (fonctionne avec "top 0")*/
+    top: 0;
+    background-color: white;
+}
+
+nav .profile{
+    display: flex; /*pour aligner les éléments*/
+    align-items: center;
+}
+
+nav .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /*arrondir les bords*/
+}
+
+nav .profile h1{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white; /*on va pouvoir, par la suite changer la couleur lorsque on passe la souris*/
+}
+
+nav ul li:hover{
+    border-bottom-color: black;
+}
+
+@media screen and (max-width: 700px) {
+	nav {
+		justify-content: center;
+	}
+	nav ul {
+		display: none;
+    }
+}
+
+#intro{
+    color: gray;
+}
+
+.introduction{
+    margin-top: 10%;
+}
+
+#titreintro{
+   font-size: 350%;
+}
+
+#photocentrale{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+
+.page-content .projetsection {
+	margin-top: 6%;
+    
+}
+.page-content .projetsection h1 {
+	
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+.page-content .projetsection .projects {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between; /* mettre de l'espace entre les div*/
+    
+}
+.page-content .projetsection .project {
+	margin-right: 20px;
+	max-width: 195px;
+    
+}
+.page-content .projetsection .project h4 {
+	margin: 0;
+}
+.page-content .projetsection .project .description {
+	font-size: 10px;
+}
+.page-content .projetsection .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+.page-content header {
+    margin-top: 10%;
+    max-width: 100%;
+}
+.page-content .projetsection {
+    margin-top: 15%;
+}
+.page-content .projetsection h1 {
+    font-size: 1.5em;
+}
+
+.page-content .projetsection .project {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+    
+}
+
+.page-content .projetsection .project .description {
+    font-size: 13px;
+  
+}
+
+/*Bas de page*/
+
+footer{
+    background-color: black;
+    justify-content: flex-start;
+}
+	footer .column {
+		width: 80%;
+}
+
+footer {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+	background-color: #000;
+	color: white;
+}
+footer .colonne p {
+	font-size: 12px;
+	color: #ccc;
+	cursor: pointer;
+}
+footer .colonne p:hover {
+	color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+#mesprojets{
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
